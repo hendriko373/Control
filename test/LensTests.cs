@@ -38,10 +38,10 @@ namespace ControlTest
             => $"Name: {Name}, Age: {Age}";
     }
 
-    public class UnitTest1
+    public class LensTests
     {
         [Fact]
-        public void Test1()
+        public void Given_List_Of_Persons_And_Composed_Lens_Then_List_Updated()
         {
             var persons = ImmutableArray.Create(
                 new Person("John", 33),
